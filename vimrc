@@ -1,3 +1,4 @@
+colorscheme herald
 set ruler       " Affiche la position du curseur
 set mouse=a
 syntax on
@@ -7,11 +8,11 @@ set hlsearch            " highlight matches
 set showmatch           " highlight matching [{()}]
 set tabstop=4   " number of spaces in tab when editing
 set expandtab
-set textwidth=80
 set shiftwidth=4
 set colorcolumn=80
 set cindent
 set number
+set noshowmode
 
 "define 3 custom highlight groups
 hi User1 ctermbg=black  ctermfg=white   guibg=black   guifg=white
@@ -39,4 +40,7 @@ set listchars=eol:$,tab:>~,trail:-,extends:>,precedes:<
 noremap <F5> :set list!<CR>
 inoremap <F5> <C-o>:set list!<CR>
 cnoremap <F5> <C-c>:set list!<CR>
+
+
+execute pathogen#infect()
 
