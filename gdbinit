@@ -1,1 +1,2 @@
-/home/justin.puchelle/afs/.confs/gdbinit
+set history filename ~/.gdb_history
+set  history save on
