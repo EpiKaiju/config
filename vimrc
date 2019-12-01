@@ -1,8 +1,7 @@
-colorscheme herald
+colorscheme tokyo-metro
 set ruler       " Affiche la position du curseur
 set mouse=a
 syntax on
-set foldlevelstart=10
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set showmatch           " highlight matching [{()}]
@@ -44,3 +43,8 @@ cnoremap <F5> <C-c>:set list!<CR>
 
 execute pathogen#infect()
 
+set foldmethod=syntax
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
